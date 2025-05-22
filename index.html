@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tafl Online</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="game-selection">
+            <h3>Join a Game</h3>
+            <input id="game-id-input">
+            <button onclick="joinGame('game-id-input')">Join</button>
+    
+            <h3>Start a Game</h3>
+            <button onclick="startGame()">11x11</button>
+        </section>
+    
+    </main>
+    <script src="jsonBlob.js"></script>
+    <script src="ec-json-storage.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
