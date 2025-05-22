@@ -1,10 +1,11 @@
-async function startGame() {
-    registerNewGame()
+async function startGame(preferences) {
+    board = preferences
+    registerNewGame(board)
 }
 
-async function registerNewGame() {
+async function registerNewGame(board) {
     const registerData = {
-        "board": "hnefetafl",
+        "board": board,
         "registered_players": {
             "attacker": undefined,
             "defender": undefined,
