@@ -187,6 +187,7 @@ async function initializeGame() {
                 storageData = JSON.parse(response.text)
                 if (storageData.end_state) {
                     alert(storageData.end_state.message)
+                    window.location = '../index.html'
                 }
                 currentTurn = storageData.turn
                 stateData = storageData.state_data
