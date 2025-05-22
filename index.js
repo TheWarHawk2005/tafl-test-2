@@ -21,3 +21,7 @@ async function registerNewGame(board) {
         document.location = './game#'+gameId
     })
 }
+
+async function joinGame(gameId) {
+    window.location = './game#'+gameId
+}
